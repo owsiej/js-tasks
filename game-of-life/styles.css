@@ -1,0 +1,28 @@
+game-cell {
+    display:flex;
+    width: 15px;
+    height: 15px;
+    margin: 0.5px;
+
+}
+game-cell:hover{
+    box-sizing: border-box;
+    border: 3px solid rgb(28, 6, 227);
+}
+
+game-cell.alive {
+    background-color: green;
+}
+
+game-cell.death {
+    background-color: rgb(158, 156, 156);
+}
+
+.row {
+    display: flex;
+}
+
+button {
+    margin: 3px;
+    margin-bottom: 10px;
+}
