@@ -27,10 +27,7 @@ while (playBoard.unGuessedIndexes.length > 0) {
         playBoard.removeFoundCards(card, indexes);
         break;
       } else {
-        const availableGuesses = player.getPossibleGuesses(
-          playBoard.unGuessedIndexes
-        );
-
+        const availableGuesses = player.getPossibleGuesses();
         const indexGuess =
           availableGuesses[randomNumber(availableGuesses.length)];
         const pickedCard = playBoard.pickCard(indexGuess);
