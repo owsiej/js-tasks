@@ -8,7 +8,7 @@ const players = Array.from(
   { length: randomNumber(5, 2) },
   (_, i) => new Player(i + 1)
 );
-playBoard.registerPlayers(players);
+players.forEach((p) => playBoard.registerPlayer(p));
 
 console.log(`Board: ${playBoard.board}`);
 console.log(`Players in game: ${players.length}\n`);

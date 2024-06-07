@@ -3,6 +3,11 @@ export class Player {
     this.id = id;
     this.points = 0;
     this.guessedCards = {};
+    this.mediator = null;
+  }
+
+  setMediator(mediator) {
+    this.mediator = mediator;
   }
 
   getGuessedPair() {
@@ -27,8 +32,10 @@ export class Player {
     };
   }
 
-  getPossibleGuesses(guesses) {
+  getPossibleGuesses() {
     const guessedIndexes = Object.values(this.guessedCards).flat();
-    return guesses.filter((i) => !guessedIndexes.includes(i));
+    return this.mediator.unGuessedIndexes.filter(
+      (i) => !guessedIndexes.includes(i)
+    );
   }
 }

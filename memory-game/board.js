@@ -33,7 +33,8 @@ export class Board {
   pickCard(index) {
     return this.board[index];
   }
-  registerPlayers(players) {
-    this.players = players;
+  registerPlayer(player) {
+    this.players.push(player);
+    player.setMediator(this);
   }
 }
