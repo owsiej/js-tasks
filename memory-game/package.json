@@ -1,0 +1,13 @@
+{
+  "name": "memory-game",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Create memory game. Where computer plays with itself. The number of player random 2-4. Each player takes turn in revealing board elements.\r Trying to find a pair. Typical memory game. Lets make an assumption that players have perfect memory but they only remember elements the reveal by them self.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
